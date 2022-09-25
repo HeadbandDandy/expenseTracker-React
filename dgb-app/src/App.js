@@ -17,8 +17,8 @@ function App() {
       < Header />
       <div className='container'>
         <Balance />
-        <AssetBalance />
         <IncomeExpenses />
+        <AssetBalance />
         <AssetTracker />
         <TransactionHistory />
         <AssetHistory />
