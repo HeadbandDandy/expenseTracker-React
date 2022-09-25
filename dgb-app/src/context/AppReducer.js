@@ -9,9 +9,11 @@ export default (state, action) => {
           assets: state.assets.filter(asset => asset.id !== action.payload)
         }
       case 'ADD_TRANSACTION':
+      case 'ADD_ASSET':
         return {
           ...state,
-          transactions: [action.payload, ...state.transactions]
+          transactions: [action.payload, ...state.transactions],
+          assets: [action.payload, ...state.assets]
         }
       default:
         return state;
