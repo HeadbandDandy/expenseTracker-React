@@ -67,8 +67,16 @@ h4 {
   color: #026808 ;
 }
 
+.asset.plus {
+  color: #026808
+}
+
 .money.minus {
   color: #c0392b;
+}
+
+.asset.minus {
+  color:#c0392b;
 }
 
 
