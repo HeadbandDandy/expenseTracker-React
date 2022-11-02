@@ -12,11 +12,12 @@ const initialState = {
           { id: 4, text: 'Camera', amount: 150 }
          ],
     assets: [
-        { id: 1, text: 'Apple Stock', amount: 213},
-        { id: 2, text: 'Real-Estate', amount: 210},
-        { id: 3, text: 'Doge-Coin', amount: -1100}
+        { assetId: 1, assetText: 'Apple Stock', assetAmount: 213},
+        { assetId: 2, assetText: 'Real-Estate', assetAmount: 210},
+        { assetId: 3, assetText: 'Doge-Coin', assetAmount: -1100}
     ]
 }
+console.log(initialState)
 
 //belows creates the context
 
@@ -35,10 +36,10 @@ export const GlobalProvider = ({children}) => {
             payload: id
         })
     }
-    function deleteAsset(id) {
+    function deleteAsset(assetId) {
         dispatch({
             type: 'DELETE_ASSET',
-            payload: id
+            payload: assetId
         })
     }
     function addTransaction(transaction) {

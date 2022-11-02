@@ -11,7 +11,7 @@ export const AssetManagement = ({ asset }) => {
   return (
     <li className={asset.amount < 0 ? 'minus' : 'plus'}>
     {asset.text} <span> {sign}${Math.abs(asset.amount)}</span><button 
-    onClick={() => deleteAsset(asset.id)}className='delete-btn'>x</button>
+    onClick={() => deleteAsset(asset.assetId)}className='delete-btn'>x</button>
   </li>
   )
 }

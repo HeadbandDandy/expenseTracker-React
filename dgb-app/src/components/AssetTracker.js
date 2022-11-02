@@ -5,23 +5,23 @@ export const AssetTracker = () => {
     //below posts asset depreciation/appreciation from global state
     const {assets} = useContext(GlobalContext);
 
-    const amounts = assets.map(asset => asset.amount);
+    const assetAmounts = assets.map(asset => asset.amount);
 
 
-    const appreciation = amounts
+    const appreciation = assetAmounts
   .filter(item => item > 0)
   .reduce((acc, item) => (acc += item), 0)
   .toFixed(2);
 
 const depreciation = (
-  amounts.filter(item => item < 0).reduce((acc, item) => (acc += item), 0) *
+  assetAmounts.filter(item => item < 0).reduce((acc, item) => (acc += item), 0) *
   -1
 ).toFixed(2);
 
 
     return (
       <>   
-       <div className="inc-exp-container">
+       <div className="app-dep-container">
       <div>
         <h4>Appreciating-Assets</h4>
         <p className="asset plus">{appreciation}</p>

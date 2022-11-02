@@ -9,9 +9,9 @@ export const AssetHistory = () => {
   console.log(assets)
     return (
       <>
-          <h3>Transaction History</h3>
+          <h3>Asset History</h3>
         <ul className="list">
-          {assets.map(asset => (<AssetManagement key={asset.id} asset=
+          {assets.map(asset => (<AssetManagement key={asset.assetId} asset=
           {asset} />))}
         </ul>
       </>

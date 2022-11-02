@@ -39,6 +39,7 @@ h4 {
   text-transform: uppercase;
 }
 
+.app-dep-container,
 .inc-exp-container {
   background-color: #fff;
   box-shadow: var(--box-shadow);
