@@ -10,7 +10,7 @@ console.log(transactions)
     <>
         <h3>Transaction History</h3>
       <ul className="list">
-        {transactions.map(transaction => (<Transaction key={transaction.id} transaction=
+        {transactions.map(transaction => (<Transaction  transaction=
         {transaction} />))}
       </ul>
     </>
