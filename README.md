@@ -9,7 +9,7 @@ This application was much easier to build with React as the client-side library 
 
 ## Deployment 
 
-This application can be deployed at: https://aesthetic-tarsier-b0e4b9.netlify.app/ 
+This application can be deployed at: https://comforting-trifle-0baa2c.netlify.app/
 
 
 
